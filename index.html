@@ -24,7 +24,7 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="\imagem1.jpg"
+        <img src="imagem1.jpg"
             alt="Imagem com minha foto" title="Title: Quando mouse sobre a imagem"  width="33%">
 
         <article> <!--Foco principal-->
@@ -57,6 +57,41 @@
 
     </section>
 
+    <section id="habilidades">
+        <h2>Habilidades e tecnologias</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologias</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Básico</td>
+                    <td>Experiência com flexbox, grid e animações CSS.</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                </tr>
+            
+
+        </table>
+    </section>
+
     <footer>
         <p>Direitos reservados a Ronaud</p>
 
@@ -65,10 +100,40 @@
 
             <p>Tem um projeto em mente? Entre em contato.</p>
 
+            <form action="">
+                <Label for="nome" >Nome: </Label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <br>
+
+                <Label for="email" >E-mail: </Label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>    <br>
+
+                <Label for="telefone" >Telefone: </Label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">  <br>
+               
+                <Label for="assunto" >Assunto: </Label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvidas</option>
+                    <option value="outro">Outro</option>                
+                </select>   <br><br>
+               
+                <Label for="mensagem" >Mensagem: </Label>   <br>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" placeholder="Adiante o Assunto"></textarea required>   <br>
+                
+                <input type="checkbox" id="incricao" nome="incricao">
+                <label for="incricao">Deseja receber minha newsletter? Fique por dentro.</label>   <br>
+
+                <input type="submit" value="Enviar mensagem">
+                <input type="date">
+
+
+            </form>     <br><br>
+
             <address>
                 E-mail: <a href="mailto:ronaud@gmail.com">ronaud@gmail.com</a> <br>
                 Telefone: <a href="tel:+559999-9999">9999-9999</a>
             </address>
+
         </section>
 
     </footer>
